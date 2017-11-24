@@ -5,6 +5,107 @@
     <title>招贤馆</title>
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <style>
+        /*大轮播*/
+        .banner {
+            width: 100%;
+            height: 300px;
+            margin: 20px auto;
+        }
+        .banner .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        /*中*/
+        .midCon{
+            display: flex;
+            justify-content: center;
+        }
+        /*左*/
+        .idea{
+            width: 60%;
+
+        }
+        .idea>div{
+            position: relative;
+        }
+        .idea>div>img{
+            position: absolute;
+            top: 35px;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        .idea>div>span{
+            margin-left: 20px;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: cursive;
+            font-weight: bold;
+            border-bottom: 3px solid slategray;
+            color: black;
+        }
+        .userIdea ul{
+            margin-left: 170px;
+            margin-top: 50px;
+        }
+        /*右*/
+        .conne{
+            margin-left: 5%;
+            width: 25%;
+            height: 500px;
+            border: 1px solid;
+            padding: 15px 10px;
+        }
+        /*小轮播*/
+        .case{
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .case .swiper-slide{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+        }
+        .recruitA span{
+            margin-left: 20px;
+            font-size: 15px;
+            line-height: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            border-bottom: 3px solid slategray;
+            color: black;
+        }
+        .recruitA{
+            display: flex;
+            justify-content: space-around;
+        }
+        .recruitA>div{
+            margin-top: 15px;
+            width: 50%;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
 <header class="nk-header" style="background-color: #325d86">
@@ -39,6 +140,103 @@
     </nav>
     <!-- 导航栏结束 -->
 </header>
+<div class="nk-gap-4 mt-0"></div>
+<!-- Swiper -->
+<div class="swiper-container banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('../images/a1.png')" ></div>
+        <div class="swiper-slide" style="background: url('../images/a2.png')" ></div>
+        <div class="swiper-slide" style="background: url('../images/a3.png')" ></div>
+        <div class="swiper-slide" style="background: url('../images/a4.png')" ></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="nk-gap-1 mt-0"></div>
+<div class="midCon">
+    <div class="idea">
+        <div class="userIdea">
+            <span>企业文化</span>
+            <div style="border: 1px solid silver;margin-left: 20px;margin-right: 40px"></div>
+            <img src="../images/a1.png" alt="">
+                <ul style="list-style: thai">
+                    <li>汇聚人才，随心创造，与客户共同成长。</li>
+                    <li>核心团队：责任心、上进心、事业心、决策力、创造力</li>
+                    <li>骨干队伍:责任心、上进心、决策力、执行力</li>
+                    <li>储备人才:责任心、执行力</li>
+                </ul>
+        </div>
+        <div class="HsuiHome">
+            <span>汇随之家</span>
+            <div style="border: 1px solid silver;margin-left: 20px;margin-right: 40px"></div>
+            <!-- Swiper -->
+            <div class="swiper-container case">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url('../images/a2.png')"></div>
+                    <div class="swiper-slide" style="background-image:url('../images/a3.png')"></div>
+                    <div class="swiper-slide" style="background-image:url('../images/a4.png')"></div>
+                    <div class="swiper-slide" style="background-image:url('../images/a2.png')"></div>
+                    <div class="swiper-slide" style="background-image:url('../images/a3.png')"></div>
+                    <div class="swiper-slide" style="background-image:url('../images/a4.png')"></div>
+                    <div class="swiper-slide" style="background-image:url('../images/a2.png')"></div>
+                    <div class="swiper-slide" style="background-image:url('../images/a4.png')"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="recruit">
+            <span>招贤纳良</span>
+            <div style="border: 1px solid silver;margin-left: 20px;margin-right: 40px"></div>
+            <div class="recruitA">
+                <div>
+                    <span>校园招聘</span>
+                </div>
+                <div>
+                    <span>社会招聘</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conne">
+        <span>联系方式：</span>
+        <div style="display: flex;flex-direction: column;align-content: center;justify-content: center">
+            <p>电话：</p>
+            <p>邮箱：</p>
+            <p>email：</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
+<script src="../js/jquery.min.js"></script>
+<script src="../dist/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    $(function(){
+        var mySwiper = $('.banner').swiper({
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay:3000,
+            spaceBetween: 30
+        });
+
+        var swiper = $('.case').swiper({
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            autoplay: 3000,
+            loop : true,
+            coverflow: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true
+            }
+        });
+    })
+
+</script>
