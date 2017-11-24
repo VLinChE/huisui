@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" media="all" />
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .hvr-bounce-to-bottom {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        .hvr-bounce-to-bottom:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #2098d1;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+        .hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+            color: white;
+        }
+        .hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+
+    </style>
+</head>
+<body>
+<header class="nk-header" style="background-color: #325d86">
+    <!--导航栏-->
+    <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
+        <div class="container">
+            <div class="nk-nav-table">
+
+                <ul class="nk-nav nk-nav-right">
+                    <li>
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="details.html">公司详情</a>
+                    </li>
+                    <li>
+                        <a href="product.html">产品和服务</a>
+                    </li>
+                    <li>
+                        <a href="project.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="connection.html">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="Against.html">招贤馆</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- 导航栏结束 -->
+</header>
+<div class="nk-gap-4 mt-10"></div>
+<!--=========================
+		联系
+	============================== -->
+<section id="contact_area" class="section_padding contact_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 contact_a_title  wow  rollIn ">
+                <h2>有任何<span>需要的</span></h2>
+                <p>给我一个信息，还你一份微笑！</p>
+            </div>
+        </div>
+        <div class="row contact_buttom">
+            <div class="col-md-4 col-sm-4 col-xs-12 social_icon wow fadeInDown" data-wow-delay=".4s">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="single_social wd_link">
+                            <a class="windows hvr-bounce-to-bottom" href=""><i class="fa fa-windows"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="single_social wc_link">
+                            <a class="wechat hvr-bounce-to-bottom" href=""><i class="fa fa-wechat"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="single_social wb_link">
+                            <a class="weibo hvr-bounce-to-bottom" href=""><i class="fa fa-weibo"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="single_social qq_link">
+                            <a class="qq hvr-bounce-to-bottom" href=""><i class="fa fa-qq"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12 contact_box">
+                <div class="input-group">
+                    <form class="form">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay=".2s">
+                                <input value="" type="text" class="form-control" id="name" placeholder="名字">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12  wow fadeInRight" data-wow-delay=".2s">
+                                <input value="" type="text" class="form-control" id="representative" placeholder="公司/代表">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay=".3s">
+                                <input value="" type="mail" class="form-control" id="email" placeholder="E-Mail 地址">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12  wow fadeInRight" data-wow-delay=".3s">
+                                <input value="" type="numbar" class="form-control" id="project" placeholder="项目名称">
+                            </div>
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12 massage_a  wow fadeInUp" data-wow-delay=".4s">
+                                <textarea name="" id="discription" rows="9" class="form-control " placeholder="简要描述..." ></textarea>
+                                <div class="button bold-text main-bg massage_s"><i class="fa fa-paper-plane"></i></div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
