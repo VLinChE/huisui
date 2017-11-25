@@ -516,7 +516,7 @@ padding-bottom:50px;
   float: right;
   padding-right: 50px;
   text-align: justify;
-  width: 475px;
+  /*width: 475px;*/
 }
 .service_text h3{
 	color:#202020;

@@ -37,6 +37,14 @@
 				-webkit-align-items: center;
 				align-items: center;
 			}
+			a{
+				text-decoration: none;!important;
+			}
+			a:hover{
+				text-decoration: none;!important;
+
+			}
+
 		</style>
 
 	</head>
@@ -57,32 +65,79 @@
 			<div class="container">
 				<div class="nk-nav-table">
 
-					<ul class="nk-nav nk-nav-right">
+					<ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
 						<li>
 							<a href="index.html#about">关于</a>
 						</li>
 						<li>
-							<a href="html/details.html">公司详情</a>
-						</li>
-						<li>
-							<a href="html/product.html">产品和服务</a>
+							<a href="html/details.html">公司简介</a>
 						</li>
 						<li>
 							<a href="html/project.html">解决方案</a>
 						</li>
 						<li>
-							<a href="html/connection.html">联系我们</a>
+							<a href="html/product.html">产品服务</a>
 						</li>
 						<li>
-							<a href="html/against.html">招贤馆</a>
+							<a href="html/against.html">招贤纳士</a>
+						</li>
+						<li>
+							<a href="html/connection.html">联系我们</a>
 						</li>
 					</ul>
 
+					<ul class="nk-nav nk-nav-right nk-nav-icons">
+						<li class="single-icon hidden-lg-up">
+							<a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 		<!-- 导航栏结束 -->
 	</header>
+	<!--
+        START: 手机导航
+    -->
+	<nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+		<div class="nk-navbar-bg">
+			<div class="bg-image" style="background-image: url('images/53beafd941f43.png');"></div>
+		</div>
+		<div class="nk-nav-table">
+			<div class="nk-nav-row">
+				<div class="container">
+					<div class="nk-nav-header">
+
+
+						<div class="nk-nav-close nk-navbar-full-toggle">
+							<span class="nk-icon-close"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nk-nav-row-full nk-nav-row">
+				<div class="nano">
+					<div class="nano-content">
+						<div class="nk-nav-table">
+							<div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+								<ul class="nk-nav">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+	<!-- END: 手机导航 -->
 
 	<div class="nk-main">
 		<!-- START: 首页-->
@@ -130,7 +185,7 @@
 
 				<div class="cntl-state">
 					<div class="cntl-content">
-						<h4>关于我们</h4>
+						<h4 style="font-weight: bolder;color: black">关于我们</h4>
 						<p>上海汇随是一家工业自动化和信息化领域的高科技初创企业，公司专注电子信息及通信系统的智能测控、集成验证方案解决和产品研发，通过挖掘行业需求、整合行业资源，帮助客户降本增效、提升核心竞争力。</p>
 					</div>
 					<div class="cntl-icon cntl-center">00°</div>
@@ -139,7 +194,7 @@
 
 				<div class="cntl-state">
 					<div class="cntl-content">
-						<a href="html/details.html"><h4>公司详情</h4></a>
+						<h4><a style="font-weight: bolder;color: black" href="html/details.html">公司简介</a></h4>
 						<p>上海汇随是一家工业自动化和信息化领域的高科技初创企业，公司位于虹梅南路2588号A518室，公司先有员工*人，其中*人负责后端平台展开工作，*人负责前端界面设计及优化工作，公司主要从事电子信息及通信系统的智能测控、集成验证方案解决和产品研发，通过挖掘行业需求、整合行业资源，帮助客户降本增效、提升核心竞争力。
 						</p>
 					</div>
@@ -148,16 +203,10 @@
 						<!-- Swiper -->
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="images/a1.png"></div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
-								<div class="swiper-slide"><img src="images/a2.png"></div>
-								<div class="swiper-slide">Slide 5</div>
-								<div class="swiper-slide">Slide 6</div>
-								<div class="swiper-slide"><img src="images/a3.png"></div>
-								<div class="swiper-slide">Slide 8</div>
-								<div class="swiper-slide">Slide 9</div>
-								<div class="swiper-slide"><img src="images/a4.png"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(1).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(2).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(3).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(4).jpg"></div>
 							</div>
 							<!-- Add Pagination -->
 							<div class="swiper-pagination"></div>
@@ -171,7 +220,7 @@
 
 				<div class="cntl-state">
 					<div class="cntl-content">
-						<a href=""><h4>解决方案介绍</h4></a>
+						<h4><a href="html/project.html"  style="font-weight: bolder;color: black">解决方案</a></h4>
 						<p>需求导向、体现技术优势、关注成本、把控质量；军民融合
 						</p>
 					</div>
@@ -180,16 +229,10 @@
 						<!-- Swiper -->
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="images/a2.png"></div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
-								<div class="swiper-slide"><img src="images/a1.png"></div>
-								<div class="swiper-slide">Slide 5</div>
-								<div class="swiper-slide">Slide 6</div>
-								<div class="swiper-slide"><img src="images/a3.png"></div>
-								<div class="swiper-slide">Slide 8</div>
-								<div class="swiper-slide">Slide 9</div>
-								<div class="swiper-slide"><img src="images/a4.png"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(5).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(6).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(7).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(8).jpg"></div>
 							</div>
 							<!-- Add Pagination -->
 							<div class="swiper-pagination"></div>
@@ -203,7 +246,7 @@
 
 				<div class="cntl-state">
 					<div class="cntl-content">
-						<a href="html/product.html"><h4>产品介绍</h4></a>
+						<h4><a href="html/product.html"  style="font-weight: bolder;color: black">产品介绍</a></h4>
 						<p>电子信息及通信系统的智能测控、集成验证方案解决和产品研发，汇随测控平台介绍
 						</p>
 					</div>
@@ -212,16 +255,10 @@
 						<!-- Swiper -->
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="images/a3.png"></div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
-								<div class="swiper-slide"><img src="images/a2.png"></div>
-								<div class="swiper-slide">Slide 5</div>
-								<div class="swiper-slide">Slide 6</div>
-								<div class="swiper-slide"><img src="images/a1.png"></div>
-								<div class="swiper-slide">Slide 8</div>
-								<div class="swiper-slide">Slide 9</div>
-								<div class="swiper-slide"><img src="images/a4.png"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(9).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(10).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(11).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(12).jpg"></div>
 							</div>
 							<!-- Add Pagination -->
 							<div class="swiper-pagination"></div>
@@ -235,7 +272,7 @@
 
 				<div class="cntl-state">
 					<div class="cntl-content">
-						<a href="html/product.html"><h4>服务介绍</h4></a>
+						<h4><a href="html/product.html"  style="font-weight: bolder;color: black">服务介绍</a></h4>
 						<p>响应国家军民融合发展战略，挖掘行业需求、整合行业资源，帮助客户提升核心竞争力，为国家智能制造战略贡献一份力量。
 						</p>
 					</div>
@@ -244,16 +281,10 @@
 						<!-- Swiper -->
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="images/a4.png"></div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
-								<div class="swiper-slide"><img src="images/a2.png"></div>
-								<div class="swiper-slide">Slide 5</div>
-								<div class="swiper-slide">Slide 6</div>
-								<div class="swiper-slide"><img src="images/a3.png"></div>
-								<div class="swiper-slide">Slide 8</div>
-								<div class="swiper-slide">Slide 9</div>
-								<div class="swiper-slide"><img src="images/a1.png"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(14).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(2).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(15).jpg"></div>
+								<div class="swiper-slide"><img src="images/suc/p%20(16).jpg"></div>
 							</div>
 							<!-- Add Pagination -->
 							<div class="swiper-pagination"></div>
@@ -314,7 +345,9 @@
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 30
+        spaceBetween: 30,
+		autoplay:3000,
+        loop : true
     });
 //    关于
     $(document).ready(function(e){

@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="../css/com.css">
     <link rel="stylesheet" href="../dist/css/swiper.min.css">
 
-
-
     <script src="../js/jquery.min.js"></script>
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
@@ -18,24 +16,36 @@
             position: relative;
             height: 100%;
         }
+        .bottomSite{
+            display: flex;
+            justify-content: center;
+        }
+
+
         #container{
-            position: absolute;
-            top: 0;
-            right: 20px;
             width: 60%;
             height: 400px;
             border: 1px solid;
         }
         .site{
-            position: absolute;
-            top: 0;
-            left: 20px;
             height: 300px;
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        @media screen and (max-width: 700px){
+            .bottomSite{
+                flex-direction: column;
+                align-items: center;
+            }
+            #container{
+                width: 90%;
+            }
+            .site{
+                width: 90%;
+            }
         }
         .swiper-container {
             width: 100%;
@@ -107,36 +117,81 @@
         <div class="container">
             <div class="nk-nav-table">
 
-                <ul class="nk-nav nk-nav-right">
+                <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
                     <li>
                         <a href="../index.html">首页</a>
                     </li>
                     <li>
-                        <a href="details.html">公司详情</a>
-                    </li>
-                    <li>
-                        <a href="product.html">产品和服务</a>
+                        <a href="details.html">公司简介</a>
                     </li>
                     <li>
                         <a href="project.html">解决方案</a>
                     </li>
                     <li>
-                        <a href="connection.html">联系我们</a>
+                        <a href="product.html">产品服务</a>
                     </li>
                     <li>
-                        <a href="against.html">招贤馆</a>
+                        <a href="against.html">招贤纳士</a>
+                    </li>
+                    <li>
+                        <a href="connection.html">联系我们</a>
                     </li>
                 </ul>
-
+                <ul class="nk-nav nk-nav-right nk-nav-icons">
+                    <li class="single-icon hidden-lg-up">
+                        <a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- 导航栏结束 -->
 </header>
+<!--
+        START: 手机导航
+    -->
+<nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+    <div class="nk-navbar-bg">
+        <div class="bg-image"  style="background-image: url('../images/53beafd941f43.png');"></div>
+    </div>
+    <div class="nk-nav-table">
+        <div class="nk-nav-row">
+            <div class="container">
+                <div class="nk-nav-header">
 
+
+                    <div class="nk-nav-close nk-navbar-full-toggle">
+                        <span class="nk-icon-close"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-nav-row-full nk-nav-row">
+            <div class="nano">
+                <div class="nano-content">
+                    <div class="nk-nav-table">
+                        <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                            <ul class="nk-nav">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-- END: 手机导航 -->
 <!-- Swiper -->
 <div class="swiper-container">
-    <div class="parallax-bg" style="background-image:url('../images/a4.png')" data-swiper-parallax="-23%"></div>
+    <div class="parallax-bg" style="background-image:url('../images/suc/p (4).jpg')" data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="title" data-swiper-parallax="-100">公司详情</div>
@@ -183,13 +238,14 @@
 
 
 <div class="nk-gap-4 mt-10"></div>
-<div style="position: relative">
+<div class="bottomSite">
+    <div id="container"></div>
     <div class="site">
         <div><span>公司地址：</span>虹梅南路2588号A518室</div>
         <div><span>联系方式：</span>123456789</div>
         <div><span>邮箱:</span>Hsui-info@weixin.com</div>
     </div>
-    <div id="container"></div>
+
 </div>
 
 
@@ -198,6 +254,7 @@
 </html>
 <!-- Swiper JS -->
 <script src="../dist/js/swiper.min.js"></script>
+<script src="../js/com.js"></script>
 
 <!-- 轮播设置 -->
 <script>
@@ -208,7 +265,8 @@
         prevButton: '.swiper-button-prev',
         parallax: true,
         autoplay:3000,
-        speed: 600
+        speed: 600,
+        loop:true
     });
 </script>
 
