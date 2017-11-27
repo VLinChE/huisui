@@ -6267,7 +6267,8 @@ b,strong {
 }
 
 .nk-navbar,.nk-navbar.nk-navbar-solid {
-    background-color: #fff
+    background-color: #fff;
+
 }
 
 .nk-navbar.nk-navbar-transparent-always {
@@ -7779,9 +7780,11 @@ div.nk-error {
     display: inline-block;
     width: 20px;
     height: 18px;
-    color: #252525
+    color: white;
 }
-
+.nk-navbar-solid .nk-icon-burger{
+    color: #23379c;
+}
 .nk-icon-burger>span {
     position: absolute;
     display: block;
